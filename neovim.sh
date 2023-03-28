@@ -3,9 +3,11 @@
 sudo apt install neovim -y
 sudo apt install curl -y
 
+# in order for the nerdtree to look good, consider running nerdfonts.sh
+
 # Retrieve https://github.com/junegunn/vim-plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
     
 cp -r ./resources/nvim ~/.config/
 
