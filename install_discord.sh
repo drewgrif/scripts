@@ -32,6 +32,3 @@ EOF
 sudo cp ./temp /usr/share/applications/discord.desktop;rm ./temp
 
 
-sudo 
-
-
