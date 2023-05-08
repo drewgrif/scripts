@@ -21,11 +21,13 @@ alias free='free -h'
 alias bs='micro ~/.bashrc'
 alias reload='source ~/.bashrc'
 alias v="nvim"
+alias vv="nvim ~/.config/nvim/init.vim"
+alias ev="micro ~/.config/nvim/init.vim"
 alias e="micro"
 alias gc="git clone"
 
 # Dunst
-alias hi="notify-send 'Hi there!' 'Welcome to my Bspwm desktop! ' -i ''"
+alias hi="notify-send 'Hi there!' 'Welcome to my dk desktop! ' -i ''"
 
 
 # Add Color
