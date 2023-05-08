@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo apt install neovim -y
 sudo apt install curl -y
+sudo apt install neovim -y -t unstable
 
 # in order for the nerdtree to look good, consider running nerdfonts.sh
 

@@ -19,11 +19,17 @@ sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backen
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
-# File Manager (eg. pcmanfm,krusader,thunar,nautilus)
-sudo apt install -y pcmanfm
+# Networking etc
+sudo apt install -y policykit-1-gnome network-manager network-manager-gnome
+
+# Thunar
+sudo apt install -y thunar thunar-archive-plugin thunar-volman file-roller
+
+# terminal
+sudo apt install -y xfce4-terminal -y
 
 # Terminal (eg. terminator,kitty,xfce4-terminal)
-sudo apt install -y kitty
+sudo apt install -y tilix
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
@@ -46,7 +52,7 @@ sudo apt install -y firefox-esr
 sudo apt install -y feh
  
 # Fonts and icons for now
-sudo apt install -y fonts-firacode fonts-liberation2 fonts-ubuntu papirus-icon-theme fonts-cascadia-code
+sudo apt install -y fonts-recommended fonts-ubuntu fonts-font-awesome fonts-terminus papirus-icon-theme 
 
 # EXA installation
 # replace ls command in .bashrc file with line below
@@ -55,13 +61,17 @@ sudo apt install -y exa
 
 # Printing and bluetooth (if needed)
 sudo apt install -y cups system-config-printer simple-scan
-sudo apt install -y bluez blueman
+# sudo apt install -y bluez blueman
 
 sudo systemctl enable cups
-sudo systemctl enable bluetooth
+# sudo systemctl enable bluetooth
 
 # Packages needed for bspwm installation
-sudo apt install -y bspwm dmenu sxhkd picom numlockx rofi dunst libnotify-bin unzip geany scrot
+sudo apt install -y bspwm suckless-tools sxhkd picom rofi dunst libnotify-bin unzip 
+
+# my favs
+sudo apt install -y numlockx geany geany-plugins scrot evince pdfarranger transmission-gtk gimp obs-studio mkvtoolnix-gui
+sudo apt install -y mpv figlet qimgv l3afpad galculator redshift
 
 # Command line text editor -- nano preinstalled 
 sudo apt install -y micro
