@@ -4,7 +4,7 @@ sudo apt install -y libxcb-randr0-dev
 sudo apt install -y libxcb-util-dev
 sudo apt install -y libxcb-icccm4-dev 
 sudo apt install -y libxcb-cursor-dev 
-sudo apt install -y libxcb-keysysms1-dev 
+sudo apt install -y libxcb-keysyms1-dev 
 
 cd ~/Downloads
 git clone https://bitbucket.org/natemaia/dk.git
